@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Katherianna 🤍</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<audio id="bgMusic" src="her_song.mp3" loop></audio>
+
+<div class="container">
+
+<h1>To Katherianna Thessalonica Misikaram 💕</h1>
+
+<p class="message">
+Every second with you is special.<br>
+Happy Valentine’s Day My Love 🤍
+</p>
+
+<div class="countdown-box">
+  <button onclick="toggleMusic()" id="musicBtn" aria-label="Play or pause background music">🎵 Play Our Song</button>
+  <h2>Countdown to Valentine’s Day 💘</h2>
+  <div id="countdown"></div>
+</div>
+
+<h2 class="section-title">Our Memories 📸</h2>
+
+<div class="photo-grid">
+  <img src="photo1.jpg" alt="" loading="lazy">
+  <img src="photo2.jpg" alt="" loading="lazy">
+  <img src="photo3.jpg" alt="" loading="lazy">
+  <img src="photo4.jpg" alt="" loading="lazy">
+  <img src="photo5.jpg" alt="" loading="lazy">
+  <img src="photo6.jpg" alt="" loading="lazy">
+  <img src="photo7.jpg" alt="" loading="lazy">
+  <img src="photo8.jpg" alt="" loading="lazy">
+</div>
+
+<div class="question-box">
+  <h2>🤍 Will You Be My Valentine? 🤍</h2>
+
+  <div class="buttons">
+    <button class="yes" onclick="sayYes()">YES 💘</button>
+    <button class="no" id="noBtn">NO 😏</button>
+  </div>
+
+  <p id="response"></p>
+</div>
+
+</div>
+
+<!-- Slideshow Modal -->
+<div id="slideshowModal" class="slideshow-modal" aria-hidden="true">
+  <button class="slideshow-close" aria-label="Close slideshow">&times;</button>
+  <button class="slideshow-play" aria-label="Play/Pause slideshow">▶</button>
+  <button class="slideshow-prev" aria-label="Previous">❮</button>
+  <div class="slideshow-content">
+    <img id="slideshowImage" src="" alt="">
+    <div id="slideCaption" class="caption"></div>
+    <div id="slideshowIndicators" class="slideshow-indicators" aria-hidden="false"></div>
+  </div>
+  <button class="slideshow-next" aria-label="Next">❯</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
